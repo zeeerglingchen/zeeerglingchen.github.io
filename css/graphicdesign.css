@@ -1,0 +1,40 @@
+*{
+    font-family: 'Roboto', sans-serif
+  }
+
+@media(min-width:1024px){
+
+    body{
+        background-color:rgb(250,250,250);
+    }
+
+    .bold{
+        font-weight: 700;
+    }
+
+    .backgroundcolor{
+        background-color:white;
+        width:1400px;
+        margin:12rem auto;
+        box-shadow: 1px 1px 6px rgb(233, 233, 233);
+
+    }
+
+    .align-left{
+        text-align: left;
+        padding:0 3rem;
+        margin: 0;
+        margin-left: 3.5rem;
+    }
+    .inside_img{
+        padding:3rem 0;
+    }
+
+    .end_img{
+        padding-bottom: 6rem;
+
+    }
+ 
+
+
+}

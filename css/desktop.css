@@ -1,0 +1,442 @@
+*{
+  font-family: 'roboto', sans-serif
+}
+@media(min-width:1024px){
+
+  #body{
+    background: rgb(20,20,20);
+  }
+  .grid{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr repeat(4, 360px) 1fr
+  }
+
+  #introduction{
+    margin:0;
+    padding:0;
+    display: inline-block;
+    margin-top: 15rem;
+    grid-column: 4/7;
+    color: rgb(241, 241, 241);    
+  }
+
+  #introduction h1{
+    font-family:'open sans', sans-serif;
+    margin:  0.5rem 0;
+  }  
+
+  #introduction p{
+    font-family:'open sans', sans-serif;
+  }
+
+
+  #carousel{
+    display:inline-block;
+    grid-column: 1/4;
+    width:100%;
+    height:90%;
+    position:relative;
+    margin-left: 3rem;
+    margin-top: 9rem;
+  }
+
+  .carousel_container{
+    height:100%;
+  }
+
+  .carousel_ul{
+    list-style: none;
+    height:100%;
+    transition: transform 250ms ease-in;
+  }
+
+  .carousel_li{
+    width:100%;
+    height:100%;
+    position: absolute;
+  }
+
+  .carouselimg{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+  }
+
+  #glitch01{
+    max-width: 100%;
+    max-height: 100%;
+    animation: glitch01 infinite;
+    animation-duration: 1.5s;
+
+  }
+  @keyframes glitch01{
+    0%{
+      clip: rect(42px, 3000px, 100px, 0px);
+    }
+    20%{
+      clip: rect(102px, 3000px, 120px, 0px);
+    }
+    4%{
+      clip: rect(280px, 3000px, 320px, 0px);
+    }
+    60%{
+      clip: rect(320px, 3000px, 360px, 0px);
+    }
+    80%{
+      clip: rect(400px, 3000px, 500px, 0px);
+    }
+    100%{
+      clip: rect(682px, 3000px, 720px, 0px);
+    }
+
+  }
+  #glitch02{
+    max-width: 100%;
+    max-height: 100%;
+    animation: glitch02 infinite;
+    animation-duration: 2s;
+
+  }
+  @keyframes glitch02{
+    0%{
+      clip: rect(442px, 3000px, 500px, 0px);
+    }
+    20%{
+      clip: rect(502px, 3000px, 620px, 0px);
+    }
+    4%{
+      clip: rect(680px, 3000px, 720px, 0px);
+    }
+    60%{
+      clip: rect(20px, 3000px, 116px, 0px);
+    }
+    80%{
+      clip: rect(100px, 3000px, 192px, 0px);
+    }
+    100%{
+      clip: rect(200px, 3000px, 320px, 0px);
+    }}
+
+  #img2{
+    z-index: 2; }
+  #img3{
+    z-index: 0;
+  }
+
+  .carousel_button{
+    position: absolute;
+    font-size: 1.5rem;
+    top:90%;
+    right:43%;
+    background:white;
+    border-radius: 100%;
+    border:0;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor:pointer;
+    z-index: 5;
+  }
+
+  .carousel_button--right{
+    right:58%
+  }
+  .carousel_button img{
+    margin-top: .2rem;
+    }
+
+  .carousel_nav{
+    position: absolute;
+    z-index: 2;
+    top:3%;
+    right:50%;
+  }
+
+  .link{
+    margin-top: 2rem;
+  }
+
+  
+  .self-intro{
+    width:80%;
+    float: right;
+    margin-right: 3rem;
+  }
+
+  /* navigation bar */
+  #main{
+    background-color:rgb(20,20,20);
+  }
+
+  #navigation{
+    z-index: 5;
+    position: fixed;
+    margin: 3rem 3rem;
+    width: 100%;
+    
+   }
+
+  #navigation div{
+    list-style-type: none;
+    display: inline-block;
+    color:white;    
+  }
+
+  #navigation p{
+    display: inline-block;
+    color: rgb(241, 241, 241);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: thin;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+
+  #logo img{
+    height: 2.5rem;
+  }
+
+  #link{
+    margin-top:2.5rem;
+    margin-right:8rem;
+    float:right;
+  }
+    
+  #link a{
+    padding-right: 1rem;
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.1rem;
+  }
+
+  /* work display */
+  #main .title p{
+    margin-left: 3rem;
+    margin-top: 8rem;
+    text-align: left;
+    color: rgb(231, 231, 231);
+    font-family: 'PT sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  #work #workcontainer{
+    grid-column: 1/6;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin:0rem 3rem;
+    margin-top:-2rem;
+  }
+
+  #work #workcontainer a{
+    grid-column: 1/3;
+    margin: 5rem 0;
+    background: rgb(20,20,20);
+    text-align: left;
+    cursor: pointer;
+    list-style: none;
+    border-radius: 0.8rem;
+    text-decoration: none;
+  }
+
+  /* hover text styling */
+
+    /* overall */
+  #workcontainer .workhover {
+    grid-column: 2/5;
+    padding-top:4rem;
+    z-index: 5;
+    position: absolute;
+    opacity:0;
+    left: 6rem;
+  }
+
+    /* number */
+  .workhover .item_meta .item_number{
+    font-family: 'futura';
+    margin-left: 15rem;
+    color: white;
+    font-size: 6rem;
+    font-weight: 400;
+    transition: 0.8s ease;
+  }
+
+    /* explore */
+  .workhover  .item_ex{
+    margin-left: 28rem;
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top:0.5rem;
+    transition: 0.3s ease;
+  }
+
+    /* bar */
+  .workhover .item_meta .item_bar{
+    margin-left: 15rem;
+    width:0px;
+    padding: 0.5rem;
+    border-bottom: 5px solid white;
+    transition: 1s ease;
+  }
+
+    /* name */
+  .workhover .item_name{
+    font-family: 'futura';
+    color: white;
+    font-size: 4rem;
+    font-weight: bolder;   
+    transition: .8s ease;
+  }
+
+   /* introduction */
+  .workhover .item_des{
+    padding:0;
+    margin:0;
+    padding-top:1rem;
+    width:60%;
+    margin-left: 28rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+    font-family:'open sans', sans-serif;
+    transition: .5s ease;
+
+  }
+
+   /* background img */
+  .workbackground .cover_img{
+    border-radius: 0.8rem;
+    opacity: 1; 
+    transition: .8s ease;
+  }
+
+
+   /* background name */
+  .workbackground p{
+  z-index: 2;
+  padding-left:15rem;
+  padding-top:15rem;
+  opacity:1;
+  position: absolute;
+  color: white;
+  font-size: 6rem;
+  font-weight: bolder;    
+  font-family:'arial', sans-serif;
+  font-style: italic;
+  text-shadow: 1px 1px 100px rgb(12, 12, 12);
+
+  }
+
+
+  #work .workhover:hover{
+    opacity: 1;
+    transition: .5s ease;
+  }
+
+  #work .workhover:hover  .item_bar{
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes grow {
+    from {
+      width:0px;
+    }
+    to {
+      width:700px;
+    }
+  }
+
+
+  #work .workhover:hover + .workbackground img{
+    width: 102%;
+    height: auto;
+    opacity: 0.4; 
+    transform: translate3d(0, -6%, 0);
+    transition: .8s ease;
+  }
+
+  #work .workhover:hover + .workbackground p{
+    opacity: 0;
+    transition: .2s ease;
+  }
+
+
+  /* aboutme page */
+
+  /* selfdes */
+
+  #footer{
+    background-color: rgb(20,20,20);
+    height:15rem;
+  }
+
+  #footer .long-card{
+    display: grid;
+    margin-left:3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .part{
+    display: inline-block;
+    margin: 4rem 0rem;
+    line-height: 1.4rem;
+  }
+
+  #footer .one{
+    grid-column: 1/2;
+  }
+  #footer .two{
+    grid-column: 2/3;
+  }
+  #footer .three{
+    grid-column: 3/4;
+    color: rgb(185,185,185);
+    text-align: center;
+  }
+
+  #footer p{
+    font-size: 0.9rem;
+    color: rgb(185,185,185);
+    font-weight: 300;
+  }
+
+  #footer span{
+    color: rgb(27, 233, 233);
+  
+  }
+
+
+  #footer .three i{   
+    font-size: 1.5rem;
+    padding:0.8rem;
+    text-decoration: none;
+    color: rgb(185,185,185);
+
+  }
+
+  .about_img{
+    margin: 0 3rem;
+    
+  }
+
+  .about_img img{
+    padding-top: 12rem;
+    width:100%;
+
+    
+  }
+
+  .con-mobile{
+    display:none
+  }
+
+  
+
+}

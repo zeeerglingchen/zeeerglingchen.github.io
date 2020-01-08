@@ -1,0 +1,74 @@
+*{
+    font-family: 'roboto', sans-serif
+  }
+
+@media(max-width:1024px){
+    main{
+        display: none;
+    }
+    header{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+
+    .con-mobile{
+        display: block;
+        width:100%
+    }
+
+    .con-mobile .button{
+        position:absolute;
+        text-decoration: none;
+        margin-left: 3rem;
+    }
+
+    .con-text{
+        position: absolute;
+        margin:25rem 3rem;
+    }
+
+    .con-text span{
+        font-family: 'roboto', sans-serif;
+        color: rgb(252, 252, 252);
+        text-decoration: none;
+        font-size: 5.2rem;
+        font-weight: 600;
+    }
+
+    .con-text p {
+        padding:3rem 0;
+        font-family: 'roboto', sans-serif;
+        color: rgb(252, 252, 252);
+        text-decoration: none;
+        font-size: 2.6rem;
+        line-height: 3rem;
+        font-weight: 600;
+
+    }
+
+    .mobile-img{
+        overflow: hidden;
+        z-index: 0;
+        max-width:100%;
+        height:auto;
+        /* width: 100%; */
+        /* height:auto; */
+        
+    }
+
+    .con-mobile .button p{
+        border:none;
+        font-family: 'roboto', sans-serif;
+        margin-top: 8rem;
+        z-index: 1;
+        background-color: rgb(22, 22, 22);
+        padding:36px 55px;
+        color: rgb(252, 252, 252);
+        text-decoration: none;
+        font-size: 2.2rem;
+      }
+
+}
+
