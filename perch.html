@@ -27,198 +27,169 @@
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
     <header class = "grid">
         <div id = 'navigation'>
-            <div id = 'logo'>
-                <a href = "index.html" target="_blank" ><img src = "images/chenlogo-05.svg" class = 'svg_logo' alt = "looks like a bulb"></a>
-                <p>selected<br> works <br> from <br>2015 - 2019</p>
+            <div>
+                <a href = "index.html"><h1>Chen Design Lab</h1></a>
             </div>
-            <!-- <div id = 'wording'>
-                <p> project 01: perch </p> 
-            </div> -->
             <div id = 'link'>
-                <a class = "current_page" href = "index.html" target="_blank">| work </a> 
-                <a href = "about.html" target="_blank"> | about </a>
-                <a href = "docs/chenyang_lyu_resume_2019.pdf" target="_blank"> | resume </a>
-
-            </div>         
-        </div>         
+              <a href = "index.html#work"> Works </a> 
+              <a href = "about.html"> About </a>
+              <a href = "docs/chenyang_lyu_resume_2019.pdf"> Resume </a>
+            </div>          
+        </div>    
     </header>
 
     <main>
-        <figure>
-            <img class="cover-img" src="images/perch/cover-01.png" alt="Illustration">
-        </figure>
+        <div class = "progress-container">
+            <div class = "progress-bar" id = "myBar"></div>
+        </div>
  
+        <figure>
+            <img class="cover-img" src="images/perch/cover-01-01.png" alt="Illustration">
+        </figure>
+
+
         <div class="project_intro" >
             <h1 class = 'heading'>Overview</h1>
+            <div class ='bar'></div>
 
             <div class = "background align-left">
-                <span class="project_intro-heading">Background</span> 
-                <p>This summer, I worked as a UX/UI design intern at Perch in Ann Arbor.  Perch is an online talent solution for academic research groups, university departments and programs, and industrial R&D companies.
-                    <br><br>
-                    I was luck to see how a product is born from a simple idea and keeps evolving/iterating to a complex and unique platfrom.
-                    <br><br>                   
-                    I will continue to work with Perch through my last year at University of Michigan and I am excited to keep learning and growing along the process.</p>
+                <span>Background</span> 
+                <p>
+                    For Summer 2019, I worked as a UX/UI design intern at Perch under the ZLT program (<a href = 'http://zli.umich.edu/'>Zell Lurie Institute for Entrepreneurial Studies at the University of Michigan</a>).
+                    </br>Perch is a startup trying to help students achieve their full career potential by connecting them to research opportunities. 
+                    The core idea of Perch is that there is a niche for a job website specializing in research roles and connecting students with faculty or research labs.
+                    </br>My main goals are <span class= 'inline-style'>redesigning the user flow, optimizing job search experience, and updating the UI library.</span>
+                </p>
+            </div>
+            <div class = "background align-left">
+                <span>The Problem</span>
             </div>
 
-            <div class = "myrole align-left">
-                <span class="project_intro-heading">What did I do</span> 
-                <p>I closely collaborated with researchers, designers and content strategists, PMs and engineers to work on 4 aspects: </p>
-                <div class = "bullet_p">
-                    <p>	• Optimize the user flow of searching and onboarding process.</p>
-                    <p> • Redesign the UI of the website & mobile web.</p>
-                    <p> • Add and redesign several new & current features.</p>
-                    <p> • Provide visual designs and branding elements.</p>       
+            <div class = 'problem align-left'>
+                <span>How might we improve the job application process on Perch website?</span>
+            </div>
+
+            <div class = "background align-left">
+                <span>Solution</span>
+
+                <div class = 'problem align-left'>
+                    <b style = 'font-size:1.3rem'>1.Redesigned search results page </b> 
+                    <P>
+                        By adopting a new information architecture on the search results page, the filter tool, the job list, and the job description section are all on the same page. It is much easier for users to check the detailed information of different jobs on the same page rather than jumping back and forth among different windows.             
+                    </P>
+                    <div class='perchvideocontainer'>
+                        <video autoplay class="video" src="video/perch_video/feature01.mp4" muted controls loop></video>
+                        <img class="laptopmockup" src = "images/perch/Chrom-Desktop.png">
+                    </div>
+
                 </div>
-            </div>
-            <div class = "background align-left">
-                <span class="project_intro-heading">The Problem</span>
-            </div>
-            <div class="outside_img">
-                <img src = "images/perch/problem-04.png">
-            </div> 
 
-            <div class = "background align-left">
-                <span class="project_intro-heading">Solution</span>
-            </div>
-            <div class="outside_img">
-                <img src = "images/perch/problem-05.png">
-            </div> 
-            <div class="outside_img">
-                <img src = "images/perch/problem-06.png">
-            </div> 
-            <div class="outside_img">
-                <img src = "images/perch/problem-07.png">
-            </div> 
     
+                <div class = 'align-left'>
+                    <b style = 'font-size:1.3rem'>2.Combined onboarding and job application process</b> 
+                    <P>By incorporating the onboarding process into the job application process, users would finish the signup process while submitting the job application.
+                    </P>
+                    <div class='perchvideocontainer'>
+                        <video autoplay class="video" src="video/perch_video/feature02.mp4" muted controls loop></video>
+                        <img class="laptopmockup" src = "images/perch/Chrom-Desktop.png">
+                    </div>
+
+                </div>
     
-        </div>
-
-        <!-- <button onclick="topFunction()" id="myBtn" title="Go to top"> Go to top</button> -->
-        <div class = 'outcomes'>
-            <h1 class = 'heading'>Internship Outcomes</h1>
-            <div class = 'outcome_01 align-left'>
-                <span class="project_intro-heading">Part 1. Website</span> 
-                <div>
-                    <p>I spent most of my time working on the website in the summer. I designed all the low-fi and hi-fi wireframes and I made some of the illustrations that shown on the website. I also participated in every usability testing and helped with most of the user researches.</p>
-                </div> 
-            </div>
-            
-            <!-- outsider -->
-            <div class="outside_img">
-                <img src = "images/perch/cover_perch-28-01.png">
-            </div> 
-
-            <div class = 'center_text'>
-                <div >
-                    <a href = "https://drive.google.com/drive/folders/1Z8ELneZT7iuzGm083A0J7ovN3muu6h50?usp=sharing" target="_blank">
-                        <i class="fab fa-google-drive"></i>
-                        <p>Check all the website wireframes</p>
-                    </a>
-                </div> 
-
-                <div>
-                    <a href = "https://www.youtube.com/watch?v=T-0tlbKBzZQ" target="_blank">
-                        <i class="fab fa-youtube"></i>
-                        <p>Check the demo video</p>
-                    </a>
-                </div> 
-            </div>  
-
-            <div class = 'outcome_02 align-left'>
-                <span class="project_intro-heading">Part 2. Mobile Web</span> 
-                <div>
-                    <p></p>
-                </div> 
-            </div>
-            <!-- outsider -->
-            <div class="outside_img">
-                <img src = "images/perch/mobile mockup perch.png">
-            </div>  
-            <!-- outsider -->
-
-            <div class = 'center_text'>
-                <div >
-                    <a href = "https://drive.google.com/drive/folders/1ZBd3ujMa1iCPa6dxgf_lFDXblUmRTmx8?usp=sharing" target="_blank">
-                        <i class="fab fa-google-drive"></i>
-                        <p>Check all the mobile wireframes</p>
-                    </a>
-                </div> 
-            </div>  
-
-            <div class = 'outcome_03 align-left'>
-                <span class="project_intro-heading">Part 3. Visual Design</span> 
-                <div>
-                    <p></p>
-                </div> 
-
-            </div>
-            <!-- outsider -->
-            <div class="outside_img">
-                <img src = "images/perch/gd-30.png">
-            </div>  
-            <!-- outsider -->             
+                <div class = 'align-left'>
+                    <b style = 'font-size:1.3rem'>3.Created a new application tracking center</b> 
+                    <P> 
+                        Users can track the application progress and view all their saved jobs as well as job recommendations in the dashboard.
+                    </P>
+                    <div class='perchvideocontainer'>
+                        <video autoplay class="video" src="video/perch_video/feature03.mp4" muted controls loop></video>
+                        <img class="laptopmockup" src = "images/perch/Chrom-Desktop.png">
+                    </div>
+                </div>   
+            </div>    
         </div>
 
         <div class = 'research'>
             <h1 class = 'heading'>Design Process</h1>
+            <div class ='bar'></div>
 
             <div class = 'process align-left'>
                 <div class="inside_img">
-                        <img src = "images/perch/process_画板 1 副本 20.png">
+                        <img src = "images/perch/perch-research_process.png">
                 </div>  
             </div>
 
             <h1 class = 'heading'>Understanding</h1>
-            <div class = 'interview align-left'>
-                <span>User Interview</span>
-                <p>I conducted 5 interviews with 5 PhDs from University of Michigan and wanted to understand their goals and frustrations and evaluate the current website. The interview consists of two parts: (1) General job searching experience and (2) their experience of using the website. I found out three samiliar pain points during interviews:</p>
+            <div class ='bar'></div>
+
+            <div class = 'align-left'>
+                <span>What's the Original Website Like?</span>
+                <p>To get a general understanding of the original system, I created an interaction map of the Perch website.
+                    It helps me get a basic idea of the user flow and the UI style of the original Perch website.</br>
+                    Findings: 
+                    </br>1. Users apply to jobs by sending emails to professors or recruiters.
+                    </br>2. The UI seems very old and lacks consistency. 
+                    </br>3. Users have to sign in or sign up to check job postings. 
+                    </br>4. Users cannot keep tracking of their submitted applications.
+                </p>
                 <div class="inside_img">
-                    <img src = "images/perch/quotes_画板 1 副本 24.png">
+                    <img src = "images/perch/perch-research_interactionmap_画板 1 副本 18.png">
                 </div>  
             </div>
 
-            <div class = 'interview align-left'>
-                <span>Competitive Analysis</span>
-                <p>With the insights from user interviews, I conducted a competitive analysis to help me learn from currently existing solutions in the market. I also realized how Perch is unique as a job searching platform for researchers. Athough big companies like Indeed and LinkedIn also provide some relevant jobs for researchers, here is still room for them to grow to meet needs of researchers and solve their pain points.
-                <br><br>One insight I got from the analysis is that, unlike Perch users have to log in to view job postings, LinkedIn and Indeed allow users to explore most content on the website without logging in. Visitors will be asked to create an account when they want to do something on the platform.I believe this user flow is better than what we currently have.</p>
+            <div class = 'align-left'>
+                <span>Understand Users' Pain Points.</span>
+                <p>To collect feedback from the current users, I conducted 5 interviews with students at the University of Michigan. I found out three general pain points during interviews, some of which match my findings from previous step:</p>
                 <div class="inside_img">
-                    <img src = "images/perch/ca_画板 1 副本 34.png">
+                    <img src = "images/perch/perch-research_quotes.png">
                 </div>  
+            </div>
+
+            <div class = 'align-left'>
+                <span>What are Solutions in The Market?</span>
+                <p>
+                    With findings from interviews in mind, I conducted a competitive analysis to help me learn from currently existing solutions and see how do they solve those problems.
+                </p>
+                <div class="inside_img">
+                    <img src = "images/perch/perch-research_ca.png">
+                </div>  
+                <p>
+                    Key takeaways for job search platforms are:
+                    </br><b>Pros:</b> 
+                            </br>1. Clean, professional, and consistent UI system.
+                            </br>2. It is more efficient to put the list of job postings and job description on the same page.
+                            </br>3. Users can apply to jobs without logging in.
+                    </br><b>Cons:</b> 
+                        </br>1. Most platforms support users to upload Resume but not CV.
+                        </br>2. It is hard to distinguish industrial jobs and research jobs.                               
+                </p>
             </div>
 
 
             <div class = 'keyfinding align-left'>
                 <span>Key Findings</span>
-                <p>Based on data and insight I gathered from previous researches, I gained three findings : <p>
+                <p>To summarize findings from previous steps, I generated three insights: <p>
                 <div class="inside_img">
-                    <img src = "images/perch/keyf_画板 1 副本 35.png">
+                    <img src = "images/perch/KEYF.png">
                 </div>  
             </div>
-
-            <!-- outsider -->
-            <div class="outside_img bigger_margin">
-                <img src = "images/perch/cs_画板 1 副本 36.png">
-            </div>  
-            <!-- outsider -->   
-
-            <div class = 'featureh align-left'>
-                <span>Feature Hierarchy</span>
-                <p>I created a feature hierarchy map by conducting a card sorting of all the current features on the website. I wanted to know the basic structure of the website and where would be possible to add new features that support users to achieve their unique goals. <p>
-                <div class="inside_img short_img">
-                    <img src = "images/perch/fh_画板 1 副本 37.svg">
-                </div>  
-            </div>
-
             <div class = 'persona align-left'>
-                <span>Personas</span>
-                <p>I created one primary and one secondary persona to help me clearly define needs and frustrations of our target users. <p>
+                <span>Define Target Users</span>
+                <p>
+                    We created one primary and one secondary persona to help us define the needs and frustrations of our users. We used the persona as a tool to communicate with the rest of the team about our design decisions.
+                </p>
                 <div class="inside_img">
-                    <img src = "images/perch/personas_画板 1 副本 38.png">
+                    <img src = "images/perch/Persona-01.png">
+                    <p> Primary Persona </p>
+                    <img src = "images/perch/Persona-02.png">
+                    <p> Secondary Persona </p>
                 </div>  
             </div>
 
@@ -226,143 +197,242 @@
 
 
         <div class = 'iteration'>
-            <h1 class = 'heading'>Design & Iteration</h1>
+            <h1 class = 'heading'>Design Process</h1>
+            <div class ='bar'></div>
 
             <div class = 'userflow align-left'>
-                <span>User Flow Optimization</span>
-                <p>I redesigned the user flow to optimize the experience of visitors and made it easier for both users and visitor to achieve their different goals. <p>
+                <span>Design Goals</span>
+                <p>I summarized two high-level goals and created the action plan for each of them to help me achieve the design 
+                    and communicate with the rest of the team.<p>
                 <div class="inside_img">
-                    <img src = "images/perch/userflow_画板 1 副本 39.png">
-                </div>  
+                    <img src = "images/perch/designgoals_画板 1 副本 9.png">
+                </div>
+                <p>
+                    In the following paragraphs, I will focus on the redesign of the <b>onboarding process</b> and the <b>results page</b>.
+                </p>
             </div>
 
+            <div class = 'userflow align-left'>
+
+                <span>Onboarding Process</span>
+                <p>
+                    <b style = 'font-size:1.3rem'>ITERATION 1:</b> 
+                    </br>Users now can view job postings on Perch and need to provide their information before they
+                        can submit the job application.
+                <p>
+                <div class="inside_img">
+                    <img src = "images/perch/interaction_画板 1 副本 10.png">
+                </div>
+                <p>
+                    <b style = 'font-size:1.3rem'>FEEDBACK:</b> 
+                    </br>- The signup flow is too long, lots of information might not be necessary at this step and users would easily
+                    be impatient during the filling-in process.
+                    </br>- It is annoying that users are required to go through the signup process when they expect to submit 
+                    the application.
+                </p>
+
+                </br>
+                </br>
+                </br>
+
+                <p>
+                    <b style = 'font-size:1.3rem'>ITERATION 2:</b>
+                    </br> Instead of having to sign up first, users now can submit applications without logging in, then users
+                    will be suggested to create a Perch account to keep track of their submitted application status. 
+                    I reduced the signup process to only 3 steps and I also added a preview section in the signup process to help users manage their account information. 
+
+                <p>
+
+                <div class="inside_img">
+                    <img src = "images/perch/interaction_画板 1 副本 11.png">
+                </div>
+                <p>
+                    <b style = 'font-size:1.3rem'>FEEDBACK:</b> 
+                    </br>- Users would likely leave after submitting applications, they can track their application progress by receiving emails from recruiters, so we need to figure out how to encourage them to create an account.
+                    </br>- The signup flow is shorter now, but there is still a chance that users might lose patience when doing this step, and the preview panel is not helpful.
+                    </br>- Now the signup process and the application process are separate, we need to find a way to combine them.
+
+                </p>
+
+                </br>
+                </br>
+                </br>
+
+                <p>
+                    <b style = 'font-size:1.3rem'>ITERATION 3:</b>
+                    </br> The goal of this round of iteration is to incorporate the process of creating an account into the job application process, so we can encourage users to register rather than to force them to do that. We ask users to upload their CVs first. And before they can submit applications, the website would scan their CVs and generate digital CVs for them, so we can get all the information that we need to create an account. Users can sign up with just one click after submitting applications. 
+                <p>
+
+                <div class="inside_img">
+                    <img src = "images/perch/interaction_画板 1 副本 12.png">
+                </div>
+                <p>
+                    <b style = 'font-size:1.3rem'>FEEDBACK:</b> 
+                    </br>- This onboarding user flow is simple and intuitive.
+                    </br>- We should let users know how many steps left to finish the signup process.
+                </p>
+                    
+
+            </div>
+
+            
+            <div class = 'userflow align-left'>
+                <span>Results Page</span>
+                <p>
+                    <b style = 'font-size:1.3rem'>ITERATION 1:</b> 
+                    </br> Users don't have to check a job description by opening it in a new tab and jump around between tabs to view different jobs. 
+                    The job posting card would be expanded to show detailed information on the same page once users click on it.
+                <p>
+                <div class="inside_img">
+                    <img src = "images/perch/interaction02_画板 1 副本 13.png">
+                </div>
+                <p>
+                    <b style = 'font-size:1.3rem'>FEEDBACK:</b> 
+                    </br>- It can be annoying for users to extend many job posting cards at one time and this page can be super long and hard to navigate.
+                </p>
+
+                </br>
+                </br>
+                </br>
+
+                <p>
+                    <b style = 'font-size:1.3rem'>ITERATION 2:</b> 
+                    </br>Instead of the 2-column layout for the results page, I adopted the 3-column layout which separates the job description section from the job posting list. 
+                    The description section would be fixed when users click on different job postings 
+                <p>
+                <div class="inside_img">
+                    <img src = "images/perch/interaction02_画板 1 副本 14.png">
+                </div>
+                <p>
+                    <b style = 'font-size:1.3rem'>FEEDBACK:</b> 
+                    </br>- Too much text and it feels a little bit overwhelming, adding something images can give users some breathing space and it also can be easier to navigate.
+                    </br>- The information architecture of the job posting card is not clear and intuitive.
+                </p>
+
+                </br>
+                </br>
+                </br>
+
+                <p>
+                    <b style = 'font-size:1.3rem'>ITERATION 3:</b> 
+                    </br>We started to do usability testings since we had a big change on the results page and we wanted to know what do users think of it.
+                    After getting feedback from users, we split up the search results into two types: the job posting and the faculty information. We also updated the layout design of the posting card to make it easier to skim through.
+                </p>
+
+                <div class="inside_img">
+                    <img src = "images/perch/usabilitytesting-15.png">
+                </div>
+
+                <p>
+                    <b>Usability Testing:</b> 
+                    </br>We conducted 4 usability testings and most of the problems we found are with the job posting list section.
+                    Key findings are:
+                    </br>- Users wanted to know when was the job posted.
+                    </br>- For research opportunities, oftentimes applicants need to connect to professors directly to find out if they are hiring people.
+                    </br>- Users have to move their eyes both vertically and horizontally to view the job posting, it is hard for them to quickly skim through the job list section.
+
+                </p>   
+
+                <div class="inside_img">
+                    <img src = "images/perch/interaction02_画板 1 副本 15.png">
+                </div>
+                <p>
+                    <b style = 'font-size:1.3rem'>FEEDBACK:</b> 
+                    </br>- The filter tool might need more work on it.
+                    </br>- Need to find a way to match users with the jobs that are fitful to them.
+                </p>
+
+                </br>
+                </br>
+                </br>
+
+                <p>
+                    <b style = 'font-size:1.3rem'>ITERATION 4:</b> 
+                    </br> We kept doing more usability testings and also conducted a card sorting with users to help us know how to reorganize the hierarchy within the filter.
+                    To help users match with the right job, we designed the matching algorithm feature which would show what is the percentage that their skills match the job description.
+                <p>
+
+                                        
+                <div class="inside_img">
+                    <img src = "images/perch/card sorting-14.png">
+                </div>
+
+                <p>
+                    Key findinds are: 
+                    </br>- The filter section should follow this hierarchy: results type, institution, location, and job type.
+                    </br>- The institution and the location parts should allow users to search for keywords.
+                <p>
+
+                    
+                <div class="inside_img">
+                    <img src = "images/perch/interaction02_画板 1 副本 16.png">
+                </div>
+                <p>
+                    <b style = 'font-size:1.3rem'>FEEDBACK:</b> 
+                    </br>- The matching algorithm could just show the number instead of all of the metrics which can be complicated and unnecessary for users to understand.
+                </p>
+
+                </br>
+                </br>
+                </br>
     
-            <div class = 'ideation align-left'>
-                <span>Ideation and wireframe</span>
             </div>
 
-            <!-- outsider -->
-            <div class="outside_img">
-                <img src = "images/perch/ideation-31.png">
-            </div>  
-            <!-- outsider -->   
-
-            <div class = 'usability_testing align-left'>
-                <span>Usability Testing</span>
-                <p>We conducted 8 rounds usability testings and after each testing, the product manager and I would discuss our insights as well as how should we update them into our designs.
-                    I gained many unexpected findings along the testing and also practiced my presenting skills a lot!<p>
-            </div>
-            <div class="outside_img">
-                <img src = "images/perch/testing-08.png">
-            </div>  
-
-            <!-- <div class = 'Iterate align-left'>
-                <span>Iteration</span>
-                <p>coming soon<p>
-            </div> -->
         </div>
 
         <div class = 'final_design'>
-                <h1 class = 'heading align-left'>Prototyping & Key Features</h1>
-    
-                <div class = 'keyfeatures align-left' id = 'f01'>
+                <h1 class = 'heading align-left'>Final Design</h1>
+                <div class ='bar'></div>
+
+                <div class = 'align-left'>
                     <br><br>
-                    <span>1. CV to Resume Conversion</span>
-                    <P>Users can convert their long and detailed CV to a concise and customized resume with one click. 
-                        To begin with, users need to upload their CV onto the website which would parse the CV to get all the information.
-                        <br><br>
-                        Users can either choose the content template provided by the website or select the section they want to include in the resume.  
-                        <br><br>
-                        In the meantime, the website can gain detailed information about the user and provides customized service to users.
-                    </P>
-                    <div class="video_class video_01">
-                        <!-- <img class = 'frame'src = 'images/perch/safari-frame.png'> -->
-                        <video class="video" src="video/perch_video/perch_video_1.mp4" autoplay muted controls loop ></video>
-                    </div>  
+                    <span>Visual Design</span>
+                    <div class="inside_img">
+                        <img src = "images/perch/VisualDesign.png">
+                    </div>
+                    <a href = "perchbrand.html">
+                        <p>Click here to view more visual design works</p>
+                    </a>
                 </div>
-    
-                <div class = 'keyfeatures align-left'>
-                    <span>2. Video Resume </span>
-                    <P>One insight we got from user interviews with recruiters is that they are concerned about the communication skills of Ph.D. students.
-                        Although this understanding is a little bit biased, we consider this as a good opportunity for Ph.D. students and researchers to
-                        show their social skills by implementing the video resume feature.
-                        <br><br> 
-                        The video resume normally would be one minute long. Users can use guideline we provide during the recording to organize their thoughts and be well-prepared.
-                    </P>
-                    <div class="video_class">
-                        <video class="video" src="video/perch_video/perch_video_2.mp4" controls muted loop autoplay ></video>
-                    </div>  
-                </div>          
-    
-                <div class = 'keyfeatures align-left'>
-                    <span>3. Job & Faculty Searching Results </span>
-                    <P>The previous searching result page is two-column layout. To improve the efficiency of 
-                        viewing all the job or faculty information for uses, I adapted the three-column layout to show the filter, the job list and detailed information of one job
-                    on the same page.
+
+                <div class = 'align-left'>
                     <br><br>
-                    It is much easier for users to check detailed information of different jobs on one page rather than jumping back and forth among different tabs.             
-                    </P>
-                    <div class="video_class">
-                        <video class="video" src="video/perch_video/perch_video_3.mp4" controls muted loop autoplay ></video>
-                    </div>  
-                </div>
-    
-                <div class = 'keyfeatures align-left'>
-                    <span>4. Convert Visitors to Users</span>
-                    <P>Perch welcomes new visitors. Actually, we allow people to submit job applications without having a Perch account.
-                        But there are certain key features that only logged-in users can use.     
-                        <br><br>   
-                        We encourage visitors to sign up and complete their profile by showing them those features.        
-                    </P>
-                    <div class="video_class">
-                        <video autoplay  class="video" src="video/perch_video/perch_video_4.mp4" muted controls loop ></video>
-                    </div>  
-                </div>
-    
-                <div class = 'keyfeatures align-left'>
-                    <span>5. Multiple Ways to Validate Skills </span>
-                    <P>The skill validation is a pain point for both job seekers and posters, especially for Ph.D. students who have many highly-specialized skills.
-                    We provide 2 ways for users to validate their skills, which are validation by uploading a certificate and by validation from a faculty.
-                    </P>
-                    <div class="video_class">
-                        <video autoplay  class="video" src="video/perch_video/perch_video_5.mp4" muted controls loop ></video>
-                    </div>  
-                </div>
-    
-                <div class = 'keyfeatures align-left'>
-                    <span>6. Easy and Skippable Onboarding </span>
-                    <P>I reduced the onboarding questions from 10 to 4 and all of them are skippable.
-                    I want users to access the main content on the website as quick and easy as possible and collect their information when 
-                    they have to provide such information to achieve their goals like uploading a resume to apply to a job.
-                    </P>
-                    <div class="video_class">
-                        <video autoplay class="video" src="video/perch_video/perch_video_6.mp4" muted controls loop  ></video>
-                    </div>  
-                </div>
-    
-                <div class = 'keyfeatures align-left'>
-                    <span>7. Dashboard </span>
-                    <P> 
-                        Users can track their applications progress and view all their saved jobs as well as job recommendations in the dashboard.
-                    </P>
-                    <div class="video_class">
-                        <video autoplay class="video" src="video/perch_video/perch_video_7.mp4" muted controls loop></video>
-                    </div>  
-                </div>    
+                    <span>Hi-fi Prototypes</span>
+                    <div class="inside_img">
+                        <img src = "images/perch/final_wireframes1.png">
+                        <p> Dashboard </p>
+                    </div>
+                    <div class="inside_img">
+                        <img src = "images/perch/final_wireframes2.png">
+                        <p> Search Results - Faculty </p>
+                    </div>
+                    <div class="inside_img">
+                        <img src = "images/perch/final_wireframes3.png">
+                        <p> Search Results - Job </p>
+                    </div>
+                    <div class="inside_img">
+                        <img src = "images/perch/final_wireframes4.png">
+                        <p> Landing Page - Applicant </p>
+                    </div>
+                    <div class="inside_img">
+                        <img src = "images/perch/final_wireframes5.png">
+                        <p> Landing Page - Employer </p>
+                    </div>
+                </div> 
         </div>
 
-        <!-- <div class = 'takeaways'>
+        <div class = 'takeaways'>
             <h1 class = 'heading'>Takeaways</h1>   
-            <div class = 'takeaways align-left'>
-                <span>Four Takeaways</span>
-                <p>coming soon <p>
+            <div class ='bar'></div>
+
+            <div class = 'align-left lastpart'>
+                <span> Balancing between business needs and users’ needs</span>
+                <p>User-centered design. It’s true, but in real-world we need to balance with business needs. Such as from users’ needs, providing less functions can simplify workload and enhance efficiency. But more functions can increase user retention from business target. How to solve this conflict? This is where UX designer is needed to solve the problem and come up with new ideas! With keeping in mind both users’ needs and business target constraints.</p>
+                <span>Closer cooperation with PM</span>
+                <p>Especially when coming up with new ideas, closer cooperate with PM to make sure if the problem exists and is suitable for the target user group. This step is crucial to make sure everyone in the team are on the same page.</p>
             </div>
-        </div> -->
-    
-
-
-  
-
+            </div>
+        </div>
 
     </main>
     <footer id = "footer" >
@@ -398,5 +468,11 @@
                 </div>
             </div>
         </footer>
+
+        <!-- scroll and hide the nav bar -->
+        <script src = "js/scrollandHide.js"></script>
+
+
+    </body>
 
 </html>

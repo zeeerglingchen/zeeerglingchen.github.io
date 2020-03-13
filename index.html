@@ -24,8 +24,8 @@
     <link rel = "stylesheet" href = "css/desktop.css">
     <link rel = "stylesheet" href = "css/tablet.css">
     <link rel = "stylesheet" href = "css/mobile-con.css">
-    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
   </head>
 
@@ -33,25 +33,19 @@
   <body id = 'body'>
     <header class = "grid">
       <div id = 'navigation'>
-
-        <div id = 'logo'>
-          <img src = "images/chenlogo-05.svg" alt = "looks like a bulb">
-          <p>selected<br> works <br> from <br>2015 - 2019</p>
-        </div>
-
         <div id = 'wording'>
-          <p> chenyanglyu <br>ux designer / former architect </p> 
+          <h1>Chen Design Lab</h1>
         </div>
 
         <div id = 'link'>
-          <a class = "current_page" href = "index.html" target="_blank">| work </a> 
-          <a href = "about.html" target="_blank"> | about </a>
-          <a href = "docs/chenyang_lyu_resume_2019.pdf" target="_blank"> | resume </a>
+          <a class = "current_page" href = "#work" >Works</a> 
+          <a href = "about.html" > About </a>
+          <a href = "docs/chenyang_lyu_resume_2019.pdf"> Resume </a>
         </div>
         
       </div>    
 
-      <div id = "carousel">
+      <!-- <div id = "carousel">
 
           <button class ="carousel_button carousel_button--left">
             &#10095;
@@ -78,12 +72,14 @@
               </li>
             </ul>
           </div>
-      </div>
+      </div> -->
     
       <div id = "introduction">
-        <figure>
-            <img class="self-intro" src="images/self-intro-01.png" alt="Illustration">
-        </figure>
+        <div class = "self-intro">
+          <p> Hi there! <br>
+            I'm an experience designer who is passionate about offering impactful interaction design by combing design and code.
+          </p>
+        </div>
       </div>
 
     </header>
@@ -106,7 +102,7 @@
             <br>
             Thanks!
         </p>
-        
+  
       </div>
       <div class = "mobile-img">
           <img class = 'mobileimg' src = "images/mobile-bg.jpeg">
@@ -121,159 +117,232 @@
 
       <section id = "work" class = "grid">
         <div id = "workcontainer">
-
-          <a href = "perch.html" id = 'perch' target="_blank">
+          
+          <a href = "perch.html" >
             <div class= 'workhover'>
                 <div class = 'item_container'>
-                  <div class = 'item_meta'>
-                      <span class = 'item_number binding'> 01. </span>
-                      <span class = 'item_name binding'> Perch  </span>
+                  <div>
+                      <span class = 'item_number '> 01. </span>
+                      <span class = 'item_name '> Perch Connection</span>
+                      <div class = 'item_bar_exist'></div>
                       <div class = 'item_bar'></div>
+
                   </div>
-                  <p class = 'item_des binding'>Helping PhDs Find the Best Jobs Effectively.</p> 
-                  <span class = 'item_ex binding'> Explore </span>
+                  <p class = 'item_des '>Helping PhDs Find the Best Jobs Effectively.</p> 
+
                 </div> 
             </div>
+            
+            <div class = 'worktitle'>
+              <h2> Perch Connection </h2>
+              <div class = 'worktype'>
+                <p> Internship </p>
+                <p> UX/UI Design </p>
+                <p> Job Platform </p>
+              </div>
+            </div>
+
             <div class = 'workbackground'>
-                <p class = 'item_name_back binding'> perch connection </p>
-                <img class = 'cover_img' src = "images/perch/perch_logo_画板 1 副本 2.png" alt = "this is my 2019 summer internship project" >
+                <img class = 'cover_img' src = "images/perch/perchcover.jpg" alt = "this is my 2019 summer internship project" >
+            </div>
+
+          </a>
+
+          <a href = "jingyusheji.html" id = 'jingyu'>
+            <div class= 'workhover'>
+                <div class = 'item_container'>
+                  <div  >
+                      <span class = 'item_number '> 02. </span>
+                      <span class = 'item_name '>WhaleDesign </span>
+                      <div class = 'item_bar_exist'></div>
+                      <div class = 'item_bar'></div>
+                  </div>
+                  <p class = 'item_des '>Turning Design Contests into Games</p> 
+                </div> 
+            </div>
+
+            <div class = 'worktitle'>
+              <h2> WhaleDesign </h2>
+              <div class = 'worktype'>
+                <p> Full-time Job</p>
+                <p> Product Design </p>
+                <p> Gamification </p>`
+              </div>
+            </div>
+            <div class = 'workbackground'>
+                <img class = 'cover_img' src = "images/jingyu/white_11.jpg" alt = "full-time job project" >
             </div>
           </a>
 
-          <a href = "jingyusheji.html" id = 'jingyu' target="_blank">
+          <a href = "radar.html">
             <div class= 'workhover'>
                 <div class = 'item_container'>
 
-                  <div class = 'item_meta'>
-                      <span class = 'item_number binding'> 02. </span>
-                      <span class = 'item_name binding'>WhaleDesign </span>
+                  <div  >
+                      <span class = 'item_number '> 03. </span>
+                      <span class = 'item_name '>Radar</span>
+                      <div class = 'item_bar_exist'></div>
                       <div class = 'item_bar'></div>
                   </div>
-                  <p class = 'item_des binding'>Turning Design Contests into Games</p> 
-                  <span class = 'item_ex binding'> Explore </span>
+                  <p class = 'item_des '>Saving Online Shoppers Money and Time.</p> 
                 </div> 
+            </div>      
+            <div class = 'worktitle'>
+              <h2> Radar </h2>
+              <div class = 'worktype'>
+                <p> UX/UI Design</p>
+                <p> Shopping Assistant </p>
+                <p> Mobile App </p>
+              </div>
             </div>
             <div class = 'workbackground'>
-                <p class = 'item_name_back binding'> whaledesign </p>
-                <img class = 'cover_img' src = "images/jingyu/未标题-1_画板 1 副本 4.png" alt = "this is my 2019 summer internship project" >
+                <img class = 'cover_img' src = "images/radar/radarcover.jpg">
             </div>
           </a>
 
-          <a href = "radar.html" id = 'perch' target="_blank">
+          <a href = "#" id = 'reasi'>
             <div class= 'workhover'>
                 <div class = 'item_container'>
 
-                  <div class = 'item_meta'>
-                      <span class = 'item_number binding'> 03. </span>
-                      <span class = 'item_name binding'>Radar</span>
+                  <div  >
+                      <span class = 'item_number '> 04. </span>
+                      <span class = 'item_name '> Reasi (Coming Soon) </span>
+                      <div class = 'item_bar_exist'></div>
                       <div class = 'item_bar'></div>
                   </div>
-                  <p class = 'item_des binding'>Saving Online Shoppers Money and Time.</p> 
-
-                  <span class = 'item_ex binding'> Explore </span>
+                  <p class = 'item_des '>Real Estate Transactions Made Easy</p> 
                 </div> 
             </div>
-            <div class = 'workbackground'>
-                <p class = 'item_name_back binding'> radar </p>
-                <img class = 'cover_img' src = "images/radar/未标题-1_画板 1 副本 3.png" alt = "this is my 2019 summer internship project" >
-            </div>
-          </a>
 
-          <a href = "#" id = 'perch' target="_blank">
-            <div class= 'workhover'>
-                <div class = 'item_container'>
-
-                  <div class = 'item_meta'>
-                      <span class = 'item_number binding'> 04. </span>
-                      <span class = 'item_name binding'> Reasi (Coming Soon) </span>
-                      <div class = 'item_bar'></div>
-                  </div>
-
-                  <p class = 'item_des binding'>Real Estate Transactions Made Easy</p> 
-
-                  <span class = 'item_ex binding'> Explore </span>
-                </div> 
+            <div class = 'worktitle'>
+              <h2> Reasi </h2>
+              <div class = 'worktype'>
+                <p> UX/UI Design</p>
+                <p> Internship </p>
+                <p> Transaction Management </p>
+              </div>
             </div>
             <div class = 'workbackground'>
-                <p class = 'item_name_back binding'>reasi </p>
-                <img class = 'cover_img' src = "images/reasi/cover_画板 1 副本 4.png" alt = "this is my 2019 summer internship project" >
+                <img class = 'cover_img' src = "images/reasi/reasi.jpg" alt = "most recent project" >
             </div>
           </a>
         </div>
       </section>
 
       <div class = 'title'>
-          <p>| ARCHITECTURAL DESIGN </p>
+        <p>| VISUAL DESIGN </p>
+    </div>
+
+    <section id = "work" class = "grid">
+      <div id = "workcontainer">
+
+        <a href = "chinafemale.html" id = 'perch'>
+          <div class= 'workhover'>
+              <div class = 'item_container'>
+                <div  >
+                    <span class = 'item_number '> 01. </span>
+                    <span class = 'item_name '> Feminism Logo Design </span>
+                    <div class = 'item_bar_exist'></div>
+                    <div class = 'item_bar'></div>
+                </div>
+                <p class = 'item_des '> Designing for women's rights</p> 
+              </div> 
+          </div>
+
+          <div class = 'worktitle'>
+            <h2> Chinese Feminsim </h2>
+            <div class = 'worktype'>
+              <p> Brand Identity</p>
+              <p> Logo Design </p>
+            </div>
+          </div>
+          <div class = 'workbackground'>
+              <img class = 'cover_img' src = "images/chinafemale/cover_画板 1 副本 7.png" alt = "full-time job project" >
+          </div>
+        </a>
+
+        <a href = "perchbrand.html" id = 'perch'>
+          <div class= 'workhover'>
+              <div class = 'item_container'>
+                <div  >
+                    <span class = 'item_number '> 02. </span>
+                    <span class = 'item_name '> Perch Brand Identity </span>
+                    <div class = 'item_bar_exist'></div>
+                    <div class = 'item_bar'></div>
+                </div>
+                <p class = 'item_des '>Creating a functioning brand style</p> 
+              </div> 
+          </div>
+
+          <div class = 'worktitle'>
+            <h2> Perch Brand Identity </h2>
+            <div class = 'worktype'>
+              <p> Brand Identity</p>
+              <p> Illustration</p>
+            </div>
+          </div>
+          <div class = 'workbackground'>
+              <img class = 'cover_img' src = "images/perchbrand/perch bi_画板 1 副本 8.png" alt = "full-time job project" >
+          </div>
+
+        </a>
+
+        <a href = "personallogo.html" id = 'jingyu'>
+          <div class= 'workhover'>
+              <div class = 'item_container'>
+
+                <div   >
+                    <span class = 'item_number '> 03. </span>
+                    <span class = 'item_name '> Personal Logo Design</span>
+                    <div class = 'item_bar_exist'></div>
+                    <div class = 'item_bar'></div>
+                </div>
+                <p class = 'item_des '>Redefining inspiration by my name</p> 
+              </div> 
+          </div>
+
+          <div class = 'worktitle'>
+            <h2> Personal Identity Design </h2>
+            <div class = 'worktype'>
+              <p> Brand Identity</p>
+              <p> Logo Design </p>
+            </div>
+          </div>
+          <div class = 'workbackground'>
+              <img class = 'cover_img' src = "images/personallogo/cover_画板 1 副本 6.png" alt = "full-time job project" >
+          </div>
+        </a>
+
+        <a href = "architecuraldesign.html" id = 'perch'>
+          <div class= 'workhover'>
+              <div class = 'item_container'>
+                <div>
+                    <span class = 'item_number '> 04. </span>
+                    <span class = 'item_name '> Architecture & Interior </span>
+                    <div class = 'item_bar_exist'></div>
+                    <div class = 'item_bar'></div>
+                </div>
+                <p class = 'item_des '> The collection of my spatial design works </p> 
+              </div> 
+          </div>
+
+          <div class = 'worktitle'>
+            <h2> Spatial Design </h2>
+            <div class = 'worktype'>
+              <p> Interior Design</p>
+              <p> 3D rendering </p>
+              <p> Architecture </p>
+            </div>
+          </div>
+          <div class = 'workbackground'>
+              <img class = 'cover_img' src = "images/architecture/cover_画板 1 副本 8.png" alt = "full-time job project" >
+          </div>
+
+        </a>
+
       </div>
+    </section>
 
-      <section id = "work" class = "grid">
-        <div id = "workcontainer">
-          <a href = "architecuraldesign.html" id = 'perch' target="_blank">
-            <div class= 'workhover'>
-                <div class = 'item_container'>
-                  <div class = 'item_meta'>
-                      <span class = 'item_number binding'> 01. </span>
-                      <span class = 'item_name binding'> Architecture & Interior </span>
-                      <div class = 'item_bar'></div>
-                  </div>
-                  <p class = 'item_des binding'> The collection of my spatial design works </p> 
-                  <span class = 'item_ex binding'> Explore </span>
-                </div> 
-            </div>
-            <div class = 'workbackground'>
-                <p class = 'item_name_back binding'> spatial design works </p>
-                <img class = 'cover_img' src = "images/architecture/cover_画板 1 副本 8.png" alt = "this is my 2019 summer internship project" >
-            </div>
-          </a>
-        </div>
-      </section>
-
-      <div class = 'title'>
-          <p>| GRAPHIC DESIGN </p>
-      </div>
-
-      <section id = "work" class = "grid">
-        <div id = "workcontainer">
-
-          <a href = "chinafemale.html" id = 'perch' target="_blank">
-            <div class= 'workhover'>
-                <div class = 'item_container'>
-                  <div class = 'item_meta'>
-                      <span class = 'item_number binding'> 01. </span>
-                      <span class = 'item_name binding'> Feminism Logo Design </span>
-                      <div class = 'item_bar'></div>
-                  </div>
-                  <p class = 'item_des binding'> Designing for women's rights</p> 
-                  <span class = 'item_ex binding'> Explore </span>
-                </div> 
-            </div>
-            <div class = 'workbackground'>
-                <p class = 'item_name_back binding'> chinese feminism </p>
-                <img class = 'cover_img' src = "images/chinafemale/cover_画板 1 副本 7.png" alt = "this is my 2019 summer internship project" >
-            </div>
-          </a>
-
-          <a href = "personallogo.html" id = 'jingyu' target="_blank">
-            <div class= 'workhover'>
-                <div class = 'item_container'>
-
-                  <div class = 'item_meta'>
-                      <span class = 'item_number binding'> 02. </span>
-                      <span class = 'item_name binding'> Personal Logo Design</span>
-                      <div class = 'item_bar'></div>
-                  </div>
-                  <p class = 'item_des binding'>Redefining inspiration by my name</p> 
-                  <span class = 'item_ex binding'> Explore </span>
-                </div> 
-            </div>
-            <div class = 'workbackground'>
-                <p class = 'item_name_back binding'> personal logo design </p>
-                <img class = 'cover_img' src = "images/personallogo/cover_画板 1 副本 6.png" alt = "this is my 2019 summer internship project" >
-            </div>
-          </a>
-
-        </div>
-      </section>
 
     </main>
 
